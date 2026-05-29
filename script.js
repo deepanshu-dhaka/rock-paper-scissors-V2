@@ -1,3 +1,6 @@
+let humanScore = 0;
+let computerScore = 0;
+
 // returns computer choice from 'rock', 'paper' or 'scissors'
 function getComputerChoice(){
     // generate random number among 0,1 and 2 all inclusive
