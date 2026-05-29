@@ -11,3 +11,10 @@ function getComputerChoice(){
         return 'scissors';
     }
 }
+
+// get the human or user choice
+function getHumanChoice(){
+    human_choice = prompt("Enter your choice: 'rock', 'paper' or 'scissors'").toLowerCase();
+    return human_choice;
+}
+
