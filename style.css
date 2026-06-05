@@ -1,0 +1,62 @@
+body {
+  background-color: #dcc3aa;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-heading h1 {
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
+  text-align: center;
+}
+
+.choice-selection-section {
+  border: 4px solid black;
+  background-color: #562f00;
+  width: 900px;
+  height: 340px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.images {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.images img {
+  height: 250px;
+}
+
+.display-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.human-lives-display-section .result,
+.computer-lives-display-section .result {
+  width: 40px;
+}
+.result {
+  background-color: #f9f8f6;
+  height: 40px;
+  width: 490px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 19px;
+}
+
+.display-section p {
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  text-align: center;
+}

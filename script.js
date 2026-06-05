@@ -20,72 +20,37 @@ function getHumanChoice() {
     return human_choice;
 }
 
+let humanChoice = getHumanChoice();
+let computerChoice = getComputerChoice();
 
 
 
 
-function playGame() {
-    let humanScore = 0;
-    let computerScore = 0;
+let humanScore = 0;
+let computerScore = 0;
 
-    // logic which decide the win or lose of the game
-    function playRound(humanChoice, computerChoice) {
-        // all the conditions in which user or human will win
-        if (
-            (humanChoice === "rock" && computerChoice === "scissors") ||
-            (humanChoice === "paper" && computerChoice === "rock") ||
-            (humanChoice === "scissors" && computerChoice === "paper")
-        ) {
-            console.log(`You win! ${humanChoice} beat ${computerChoice}`);
-            humanScore += 1;
-        }
-        // all the conditions in which computer will win
-        else if (
-            (humanChoice === "rock" && computerChoice === "paper") ||
-            (humanChoice === "paper" && computerChoice === "scissors") ||
-            (humanChoice === "scissors" && computerChoice === "rock")
-        ) {
-            console.log(`You lose! ${computerChoice} beats ${humanChoice}`);
-            computerScore += 1;
-        } else {
-            console.log("Draw! Nobody wins");
-        }
+// logic which decide the win or lose of the game
+function playRound(humanChoice, computerChoice) {
+    // all the conditions in which user or human will win
+    if (
+        (humanChoice === "rock" && computerChoice === "scissors") ||
+        (humanChoice === "paper" && computerChoice === "rock") ||
+        (humanChoice === "scissors" && computerChoice === "paper")
+    ) {
+        console.log(`You win! ${humanChoice} beat ${computerChoice}`);
+        humanScore += 1;
     }
-
-    console.log("Round 1!")
-    let humanSelection = getHumanChoice();
-    let computerSelection = getComputerChoice();
-    playRound(humanSelection, computerSelection);
-    console.log(`Human Score: ${humanScore}
-Computer Score: ${computerScore}`);
-
-    console.log("Round 2!")
-    humanSelection = getHumanChoice();
-    computerSelection = getComputerChoice();
-    playRound(humanSelection, computerSelection);
-    console.log(`Human Score: ${humanScore}
-Computer Score: ${computerScore}`);
-
-    console.log("Round 3!")
-    humanSelection = getHumanChoice();
-    computerSelection = getComputerChoice();
-    playRound(humanSelection, computerSelection);
-    console.log(`Human Score: ${humanScore}
-Computer Score: ${computerScore}`);
-
-    console.log("Round 4!")
-    humanSelection = getHumanChoice();
-    computerSelection = getComputerChoice();
-    playRound(humanSelection, computerSelection);
-    console.log(`Human Score: ${humanScore}
-Computer Score: ${computerScore}`);
-
-    console.log("Round 5!")
-    humanSelection = getHumanChoice();
-    computerSelection = getComputerChoice();
-    playRound(humanSelection, computerSelection);
-    console.log(`Human Score: ${humanScore}
-Computer Score: ${computerScore}`);
+    // all the conditions in which computer will win
+    else if (
+        (humanChoice === "rock" && computerChoice === "paper") ||
+        (humanChoice === "paper" && computerChoice === "scissors") ||
+        (humanChoice === "scissors" && computerChoice === "rock")
+    ) {
+        console.log(`You lose! ${computerChoice} beats ${humanChoice}`);
+        computerScore += 1;
+    } else {
+        console.log("Draw! Nobody wins");
+    }
 }
 
-playGame()
+playRound(humanChoice, computerChoice);

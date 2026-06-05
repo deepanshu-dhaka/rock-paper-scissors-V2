@@ -1,12 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
-    
-</head>
-<body>
-    <script src="script.js"></script>
-</body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Play:wght@400;700&family=Playwrite+GB+S+Guides:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    />
+  </head>
+  <body>
+    <div class="main-heading">
+      <h1>Rock Paper Scissors Game!</h1>
+    </div>
+
+    <div class="choice-selection-section">
+      <div class="images">
+        <img
+          src="images/rock.svg"
+          alt="sketch of a fist which act as name 'rock' in the game"
+        />
+        <img
+          src="images/paper.svg"
+          alt="sketch of a full hand wide open which act as name 'paper' in the game"
+        />
+        <img
+          src="images/scissors.svg"
+          alt="sketch of a two fingers points outwards, all others are closed, which act as name 'rock' in the game"
+        />
+      </div>
+    </div>
+
+    <div class="display-section">
+      <div class="human-lives-display-section">
+        <p>Your Lives:</p>
+        <div class="result"></div>
+      </div>
+
+      <div class="result-display-section">
+        <p>Result:</p>
+        <div class="result"></div>
+      </div>
+
+      <div class="computer-lives-display-section">
+        <p>Computer Lives:</p>
+        <div class="result"></div>
+      </div>
+    </div>
+    <!-- <script src="script.js"></script> -->
+  </body>
 </html>
