@@ -1,5 +1,7 @@
 # Rock Paper Scissors
 
+## Live preview of the website: [Click Here!](https://deepanshu-dhaka.github.io/rock-paper-scissors-V2/)
+
 ## Image Attributions
 
 The images used in this project were generously provided by creators on Pixabay. Sincere thanks to the original authors for these assets.
