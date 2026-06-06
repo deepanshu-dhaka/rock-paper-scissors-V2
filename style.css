@@ -42,11 +42,11 @@ body {
 
 .human-lives-display-section .result,
 .computer-lives-display-section .result {
-  width: 40px;
+  width: 28px;
 }
 .result {
   background-color: #f9f8f6;
-  height: 40px;
+  height: 28px;
   width: 490px;
   margin-left: auto;
   margin-right: auto;

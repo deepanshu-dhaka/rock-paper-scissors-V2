@@ -11,7 +11,6 @@
       href="https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Play:wght@400;700&family=Playwrite+GB+S+Guides:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    />
   </head>
   <body>
     <div class="main-heading">
@@ -21,14 +20,17 @@
     <div class="choice-selection-section">
       <div class="images">
         <img
+          class="rock-image"
           src="images/rock.svg"
           alt="sketch of a fist which act as name 'rock' in the game"
         />
         <img
+          class="paper-image"
           src="images/paper.svg"
           alt="sketch of a full hand wide open which act as name 'paper' in the game"
         />
         <img
+          class="scissors-image"
           src="images/scissors.svg"
           alt="sketch of a two fingers points outwards, all others are closed, which act as name 'rock' in the game"
         />
@@ -37,20 +39,26 @@
 
     <div class="display-section">
       <div class="human-lives-display-section">
-        <p>Your Lives:</p>
-        <div class="result"></div>
+        <p>Your Score:</p>
+        <div class="result">
+          <p id="human-score-display-paragraph"></p>
+        </div>
       </div>
 
       <div class="result-display-section">
         <p>Result:</p>
-        <div class="result"></div>
+        <div class="result">
+          <p id="result-display-paragraph"></p>
+        </div>
       </div>
 
       <div class="computer-lives-display-section">
-        <p>Computer Lives:</p>
-        <div class="result"></div>
+        <p>Computer Score:</p>
+        <div class="result">
+          <p id="computer-score-display-paragraph"></p>
+        </div>
       </div>
     </div>
-    <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script>
   </body>
 </html>
