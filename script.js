@@ -56,10 +56,12 @@ function playRound(humanChoice, computerChoice) {
     }
 
     if (humanScore === 5) {
-        printResult("You're the overall winner!")
+        printOverallResult("You're the overall winner!")
+        printRefresh();
     }
     if (computerScore === 5) {
-        printResult("You lost! Computer won the overall game!")
+        printOverallResult("You lost! Computer won the overall game!")
+        printRefresh()
     }
 }
 
@@ -82,8 +84,24 @@ function playGame(event) {
 
 }
 
+function printRefresh() {
+    let refresh = document.createElement("p");
+    refresh.textContent = "Refresh to play again!"
+    let div = document.querySelector("#result-display");
+    refresh.style.color = "#29876f";
+    refresh.style.fontSize = "30px";
+    refresh.style.marginTop = "-10px";
+    div.appendChild(refresh);
+
+
+}
+
 function printResult(str) {
     if (str) document.getElementById("result-display-paragraph").innerText = str;
+}
+
+function printOverallResult(str) {
+    if (str) document.getElementById("overall-result-display-paragraph").innerText = str;
 }
 
 function printHumanScore(num) {

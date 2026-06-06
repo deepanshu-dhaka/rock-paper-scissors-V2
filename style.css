@@ -5,7 +5,8 @@ body {
   box-sizing: border-box;
 }
 
-.main-heading h1 {
+.main-heading h1,
+h2 {
   font-family: "Play", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -53,7 +54,8 @@ body {
   margin-top: 19px;
 }
 
-.display-section p {
+.display-section p,
+.overall-result-display-section p {
   font-family: "Play", sans-serif;
   font-weight: 700;
   font-style: normal;
